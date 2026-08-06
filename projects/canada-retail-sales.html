@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  >
+
+  <title>Canada Retail Sales Analysis | Sara Ahmadi</title>
+
+  <link rel="stylesheet" href="../css/projects/canada-retail.css">
+</head>
+
+<body>
+
+  <nav class="project-nav">
+    <a class="site-name" href="../index.html">
+      Sara Ahmadi
+    </a>
+
+    <a class="back-link" href="../index.html#projects">
+      ← Back to Portfolio
+    </a>
+  </nav>
+
+  <main>
+    <header class="case-hero">
+      <div class="case-container">
+
+        <span class="case-label">
+          POWER BI · SQL · PYTHON
+        </span>
+
+        <h1>Canada Retail Sales Analysis</h1>
+
+        <p class="case-intro">
+          An end-to-end data analytics project using Statistics Canada
+          retail sales data to identify promising markets for business
+          expansion across Canada.
+        </p>
+
+        <div class="case-actions">
+          <a
+            class="case-button primary-button"
+            href="https://github.com/saraahmadi-bi/canada-retail-sales-analysis"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            View GitHub Repository
+          </a>
+
+          <!-- <a
+            class="case-button secondary-button"
+            href="#dashboard"
+          >
+            View Dashboard
+          </a> -->
+        </div>
+
+      </div>
+    </header>
+
+    <section id="dashboard" class="dashboard-section">
+      <div class="case-container">
+
+        <img
+          class="dashboard-image"
+          src="../assets/images/power-bi-dashboard.png"
+          alt="Canada Retail Sales Analysis Power BI dashboard"
+        >
+
+      </div>
+    </section>
+    <section class="case-study-section">
+  <div class="case-container">
+    <h2>Project Overview</h2>
+
+    <p>
+      This end-to-end data analytics project explores a business expansion
+      scenario for a Canadian retail chain seeking to identify the most
+      promising location for its next store.
+    </p>
+
+    <p>
+      The project transforms raw government data into actionable business
+      insights through Python, SQL, and Power BI. The analysis evaluates
+      provincial and city-level growth, seasonal sales patterns, market size,
+      and the increasing role of e-commerce.
+    </p>
+  </div>
+</section>
+
+
+<section class="case-study-section alternate-section">
+  <div class="case-container">
+    <h2>Data Source</h2>
+
+    <p>
+      The analysis uses Statistics Canada’s
+      <strong>
+        Monthly Retail Trade Sales by Province and Territory
+        (Table 20-10-0056-01)
+      </strong>,
+      covering January 2017 to May 2026.
+    </p>
+
+    <p>
+      The dataset includes monthly retail sales by province, selected cities,
+      industry category, and sales channel, including both in-store and
+      e-commerce activity. It also contains raw and seasonally adjusted values.
+    </p>
+  </div>
+</section>
+
+
+<section class="case-study-section">
+  <div class="case-container">
+    <h2>Analysis Process</h2>
+
+    <div class="process-grid">
+
+      <article class="process-card">
+        <span class="process-number">01</span>
+
+        <h3>Data Cleaning</h3>
+
+        <p>
+          The original dataset contained approximately 78,700 rows and
+          17 columns. I selected the six fields relevant to the analysis,
+          converted the date column, scaled the reported sales values,
+          and removed records without valid sales data.
+        </p>
+
+        <p>
+          The final cleaned dataset contained
+          <strong>68,463 rows</strong>.
+        </p>
+      </article>
+
+
+      <article class="process-card">
+        <span class="process-number">02</span>
+
+        <h3>SQL Analysis</h3>
+
+        <p>
+          The cleaned dataset was loaded into MySQL. I developed targeted
+          SQL queries to evaluate market growth, seasonal sales behavior,
+          city-level performance, and e-commerce adoption.
+        </p>
+      </article>
+
+
+      <article class="process-card">
+        <span class="process-number">03</span>
+
+        <h3>Dashboard Development</h3>
+
+        <p>
+          The query results were imported into Power BI and used to create
+          a single-page dashboard featuring KPI cards and four visualizations
+          designed to support an expansion decision.
+        </p>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+
+<section class="case-study-section alternate-section">
+  <div class="case-container">
+    <h2>Business Questions</h2>
+
+    <ul class="case-study-list">
+      <li>
+        Which provinces experienced the strongest retail sales growth?
+      </li>
+
+      <li>
+        Is there a consistent seasonal pattern in monthly retail sales?
+      </li>
+
+      <li>
+        Which major Canadian city demonstrated the strongest growth?
+      </li>
+
+      <li>
+        How has the share of e-commerce changed over time?
+      </li>
+    </ul>
+  </div>
+</section>
+
+
+<section class="case-study-section">
+  <div class="case-container">
+    <h2>Key Findings</h2>
+
+    <div class="insight-grid">
+
+      <article class="insight-card">
+        <strong>39%</strong>
+        <span>Quebec retail sales growth from 2018 to 2025</span>
+      </article>
+
+      <article class="insight-card">
+        <strong>42%</strong>
+        <span>Montréal growth among selected major cities</span>
+      </article>
+
+      <article class="insight-card">
+        <strong>7%</strong>
+        <span>E-commerce share of total retail sales in 2025</span>
+      </article>
+
+      <article class="insight-card">
+        <strong>$320B</strong>
+        <span>Approximate Ontario retail market size</span>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+
+<section class="case-study-section alternate-section">
+  <div class="case-container">
+    <div class="finding-block">
+      <h2>Provincial Growth</h2>
+
+      <p>
+        Between 2018 and 2025, Quebec recorded approximately
+        <strong>39% retail sales growth</strong> while maintaining a
+        substantial market size of approximately
+        <strong>$187 billion</strong>.
+      </p>
+
+      <p>
+        Some smaller provinces and territories showed higher percentage
+        growth, but their significantly smaller sales bases make them less
+        comparable for a large-scale retail expansion.
+      </p>
+
+      <p>
+        Ontario remained Canada’s largest retail market at approximately
+        <strong>$320 billion</strong>, with solid growth of around
+        <strong>32%</strong>.
+      </p>
+    </div>
+
+
+    <div class="finding-block">
+      <h2>Seasonal Sales Pattern</h2>
+
+      <p>
+        The analysis revealed a consistent seasonal pattern. Retail sales
+        generally decline in February, rise steadily toward a peak in May,
+        ease during the following months, and increase again near the
+        holiday season.
+      </p>
+
+      <p>
+        This pattern can support inventory planning, staffing decisions,
+        and promotional scheduling.
+      </p>
+    </div>
+
+
+    <div class="finding-block">
+      <h2>City-Level Performance</h2>
+
+      <p>
+        Among the cities with seasonally adjusted data, Montréal recorded
+        the highest growth at approximately <strong>42%</strong>, followed
+        by Toronto at <strong>39%</strong> and Vancouver at
+        <strong>35%</strong>.
+      </p>
+
+      <p>
+        Montréal’s strong performance supports the broader provincial
+        findings for Quebec.
+      </p>
+    </div>
+
+
+    <div class="finding-block">
+      <h2>E-commerce Growth</h2>
+
+      <p>
+        E-commerce’s share of total retail sales increased from approximately
+        <strong>2.6% in 2017</strong> to <strong>7% in 2025</strong>.
+      </p>
+
+      <p>
+        Although online sales accelerated sharply in 2020, the share remained
+        elevated afterward, suggesting a long-term structural change rather
+        than a temporary increase.
+      </p>
+    </div>
+  </div>
+</section>
+
+
+<section class="case-study-section recommendation-section">
+  <div class="case-container">
+    <h2>Business Recommendation</h2>
+
+    <p>
+      Based on the combination of market size, growth rate, and city-level
+      performance, <strong>Quebec—particularly the Montréal area—emerged
+      as the strongest candidate for further expansion analysis.</strong>
+    </p>
+
+    <p>
+      Ontario remains an attractive lower-risk option when overall market
+      size is the primary consideration.
+    </p>
+
+    <p>
+      Regardless of the physical expansion location, the continuing growth
+      of e-commerce suggests that the company should also strengthen its
+      online sales strategy.
+    </p>
+  </div>
+</section>
+
+
+<section class="case-study-section alternate-section">
+  <div class="case-container">
+    <h2>Project Limitations</h2>
+
+    <p>
+      This analysis is based primarily on retail sales volume and historical
+      growth. It does not include several factors that would be necessary
+      for a final expansion decision:
+    </p>
+
+    <ul class="case-study-list">
+      <li>Competitive intensity</li>
+      <li>Population and demographic growth</li>
+      <li>Commercial real estate costs</li>
+      <li>Local purchasing power</li>
+      <li>Store operating expenses</li>
+      <li>Industry-specific demand</li>
+    </ul>
+
+    <p>
+      The findings should therefore be treated as an initial market-screening
+      analysis rather than a final location recommendation.
+    </p>
+  </div>
+</section>
+
+
+<section class="case-study-section">
+  <div class="case-container">
+    <h2>Tools & Technologies</h2>
+
+    <div class="case-tools">
+      <span>Python</span>
+      <span>Pandas</span>
+      <span>MySQL</span>
+      <span>SQL</span>
+      <span>Power BI</span>
+      <span>Power Query</span>
+      <span>Statistics Canada Open Data</span>
+    </div>
+  </div>
+</section>
+  </main>
+
+</body>
+</html>
