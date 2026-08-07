@@ -453,102 +453,95 @@ max-width: auto;
 }
 
 
-@media (max-width: 768px) {
+@media screen and (max-width: 768px) {
 
-  body {
-    overflow-x: hidden;
-  }
-
-  /* Navigation */
-  nav {
-    padding: 16px 20px;
-  }
-
-  nav ul {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 12px 20px;
-  }
-
-  /* Hero */
   .hero {
-    padding: 50px 20px;
+    width: 100%;
+    padding: 40px 18px;
+    overflow: hidden;
   }
 
-/*   .hero-container {
+  .hero-container {
+    width: 100% !important;
+    max-width: 100% !important;
+    margin: 0 auto !important;
+    padding: 0 !important;
+
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    justify-content: center !important;
+
+    gap: 25px !important;
+  }
+
+  .hero-image {
     width: 100%;
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 30px;
-  } */
-.hero-container {
-  width: min(1400px, 100%);
-  margin: 0 auto;
-  padding: 0 30px;
-
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 65px;
-}
-  .hero-image {
-    transform: none;
+    justify-content: center;
+    order: 1;
   }
 
   .hero-image img {
-    width: 220px;
-    height: 220px;
+    width: 190px;
+    height: 190px;
   }
 
   .hero-content {
-    width: 100%;
-    max-width: 600px;
-    text-align: center;
+    width: 100% !important;
+    max-width: 100% !important;
+    min-width: 0;
+
+    text-align: center !important;
+    order: 2;
   }
 
   .hero-content h1 {
-    font-size: 38px;
-    line-height: 1.1;
-    margin-bottom: 12px;
+    margin-bottom: 10px;
+    font-size: 32px;
+    line-height: 1.15;
   }
 
   .hero-content h2 {
+    width: 100%;
     max-width: 100%;
-    font-size: 25px;
+    margin-bottom: 18px;
+
+    font-size: 22px;
     line-height: 1.35;
-    margin-bottom: 20px;
+
+    overflow-wrap: normal;
+    word-break: normal;
   }
 
-  .hero-tagline,
-  .hero-description {
-    font-size: 16px;
-    line-height: 1.7;
+  .hero-description,
+  .hero-tagline {
+    width: 100%;
+    max-width: 500px;
+    margin: 12px auto;
+
+    font-size: 15px;
+    line-height: 1.65;
   }
 
-  /* Skills inside Hero */
   .hero-skills {
-    display: flex;
-    flex-wrap: wrap;
+    width: 100%;
     justify-content: center;
     gap: 8px;
   }
 
-  .hero-skills span {
-    font-size: 12px;
-    padding: 7px 11px;
-  }
-
-  /* Buttons */
   .hero-actions {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
     gap: 12px;
   }
-}
 
+  .hero-actions .button {
+    width: min(100%, 320px);
+    margin-top: 0;
+  }
+}
 @media (max-width: 480px) {
 
   .hero {
