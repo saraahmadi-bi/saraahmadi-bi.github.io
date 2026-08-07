@@ -27,87 +27,116 @@
 
   <main>
     <header class="case-hero">
-      <div class="case-container">
+  <div class="case-container">
 
-        <span class="case-label">
-          POWER BI · SQL · PYTHON
-        </span>
+    <span class="case-label">
+      POWER BI · POWER QUERY · DAX
+    </span>
 
-        <h1>AdventureWorks Business Intelligence Dashboard</h1>
+    <h1>AdventureWorks Business Intelligence Dashboard</h1>
 
-        <p class="case-intro">
-          An end-to-end data analytics project using Statistics Canada
-          retail sales data to identify promising markets for business
-          expansion across Canada.
-        </p>
+    <p class="case-intro">
+      An end-to-end business intelligence project transforming raw sales,
+      product, customer, returns, and geographic data into an interactive
+      four-page Power BI dashboard.
+    </p>
 
-        <div class="case-actions">
-          <a
-            class="case-button primary-button"
-            href="https://github.com/saraahmadi-bi/canada-retail-sales-analysis"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            View GitHub Repository
-          </a>
+    <!-- Add this button after creating the AdventureWorks repository.
 
-          <!-- <a
-            class="case-button secondary-button"
-            href="#dashboard"
-          >
-            View Dashboard
-          </a> -->
-        </div>
+    <div class="case-actions">
+      <a
+        class="case-button primary-button"
+        href="YOUR-ADVENTUREWORKS-REPOSITORY-LINK"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        View GitHub Repository
+      </a>
+    </div>
 
-      </div>
-    </header>
+    -->
 
-    <section id="dashboard" class="dashboard-section">
-      <div class="case-container">
+  </div>
+</header>
 
+  
+    <section class="dashboard-gallery">
+  <h2>Dashboard Pages</h2>
+
+  <div class="project-slider" data-slider>
+    <div class="slider-slides">
+
+      <figure class="slider-slide active">
         <img
-          class="dashboard-image"
-          src="../assets/images/adventureworks-executive-dashboard.png"
-          alt="AdventureWorks Executive Dashboard"
-        >
-         <img
-          class="dashboard-image"
-          src="../assets/images/adventureworks-map-dashboard.png"
-          alt="AdventureWorks Map Dashboard"
-        >
-         <img
-          class="dashboard-image"
-          src="../assets/images/adventureworks-product-dashboard.png"
-          alt="AdventureWorks Product Dashboard"
-        >
-         <img
-          class="dashboard-image"
-          src="../assets/images/adventureworks-customer-dashboard.png"
-          alt="AdventureWorks Customer Dashboard"
-        >
-         <img
-          class="dashboard-image"
-          src="../assets/images/adventureworks-data-model.png"
-          alt="AdventureWorks Data Model"
+          src="..\\assets\\images\\adventureworks-executive-dashboard.png"
+          alt="AdventureWorks Executive Overview dashboard"
         >
 
-      </div>
-    </section>
+        <figcaption>Executive Overview</figcaption>
+      </figure>
+
+      <figure class="slider-slide">
+        <img
+          src="..\\assets\\images\\adventureworks-map-dashboard.png"
+          alt="AdventureWorks Geographic Analysis dashboard"
+        >
+        <figcaption>Geographic Analysis</figcaption>
+      </figure>
+
+      <figure class="slider-slide">
+        <img
+          src="..\\assets\\images\\adventureworks-product-dashboard.png"
+          alt="AdventureWorks Product Details dashboard"
+        >
+        <figcaption>Product Details</figcaption>
+      </figure>
+
+      <figure class="slider-slide">
+        <img
+          src="..\\assets\\images\\adventureworks-customer-dashboard.png"
+          alt="AdventureWorks Customer Details dashboard"
+        >
+        <figcaption>Customer Details</figcaption>
+      </figure>
+      <figure class="slider-slide">
+              <img
+                src="..\\assets\\images\\adventureworks-data-model.png"
+                alt="AdventureWorks Customer Details dashboard"
+              >
+              <figcaption>Data Modeling</figcaption>
+      </figure>
+    </div>
+
+    <button class="slider-button slider-prev" aria-label="Previous dashboard">
+      &#10094;
+    </button>
+
+    <button class="slider-button slider-next" aria-label="Next dashboard">
+      &#10095;
+    </button>
+
+    <div class="slider-counter">
+      <span class="current-slide">1</span>
+      <span>/</span>
+      <span class="total-slides">4</span>
+    </div>
+  </div>
+
+  <div class="slider-dots" aria-label="Choose dashboard page"></div>
+</section>
     <section class="case-study-section">
   <div class="case-container">
     <h2>Project Overview</h2>
 
+    
+
     <p>
-      This end-to-end data analytics project explores a business expansion
-      scenario for a Canadian retail chain seeking to identify the most
-      promising location for its next store.
+      This end-to-end business intelligence project analyzes the performance of AdventureWorks, a fictional global bicycle company, to help decision-makers monitor sales, profitability, customer behavior, product performance, and geographic trends.
     </p>
 
     <p>
-      The project transforms raw government data into actionable business
-      insights through Python, SQL, and Power BI. The analysis evaluates
-      provincial and city-level growth, seasonal sales patterns, market size,
-      and the increasing role of e-commerce.
+      Developed as part of the Maven Analytics Power BI course, the project covers the complete BI workflow—from transforming raw CSV files and building a relational data model to creating DAX measures and designing a four-page interactive Power BI dashboard.
+
     </p>
   </div>
 </section>
@@ -118,18 +147,12 @@
     <h2>Data Source</h2>
 
     <p>
-      The analysis uses Statistics Canada’s
-      <strong>
-        Monthly Retail Trade Sales by Province and Territory
-        (Table 20-10-0056-01)
-      </strong>,
-      covering January 2017 to May 2026.
+      The project uses the AdventureWorks raw dataset provided with the course, covering January 2020 to June 2022. It contains 56,046 sales records, 1,809 return records, 18,154 customers, 293 products, and 10 sales territories.
+      
     </p>
 
     <p>
-      The dataset includes monthly retail sales by province, selected cities,
-      industry category, and sales channel, including both in-store and
-      e-commerce activity. It also contains raw and seasonally adjusted values.
+      The source files include annual sales transactions, returns, and lookup tables for customers, products, product categories and subcategories, calendar dates, and geographic territories. Together, they support analysis across time, products, customers, and regions.
     </p>
   </div>
 </section>
@@ -144,31 +167,22 @@
       <article class="process-card">
         <span class="process-number">01</span>
 
-        <h3>Data Cleaning</h3>
+        <h3>Data Preparation</h3>
 
         <p>
-          The original dataset contained approximately 78,700 rows and
-          17 columns. I selected the six fields relevant to the analysis,
-          converted the date column, scaled the reported sales values,
-          and removed records without valid sales data.
+        I imported the raw CSV files into Power BI and used Power Query to clean and transform the data. This included appending the annual sales files, promoting headers, correcting data types, handling inconsistent values, and preparing the customer, product, calendar, returns, and territory tables for analysis.
         </p>
 
-        <p>
-          The final cleaned dataset contained
-          <strong>68,463 rows</strong>.
-        </p>
       </article>
 
 
       <article class="process-card">
         <span class="process-number">02</span>
 
-        <h3>SQL Analysis</h3>
+        <h3>Data Modeling & DAX</h3>
 
         <p>
-          The cleaned dataset was loaded into MySQL. I developed targeted
-          SQL queries to evaluate market growth, seasonal sales behavior,
-          city-level performance, and e-commerce adoption.
+         I built a relational data model connecting the Sales and Returns fact tables to the supporting lookup tables through one-to-many relationships. I then created DAX measures for revenue, profit, orders, returns, target comparisons, previous-month performance, rolling trends, and pricing scenario analysis.
         </p>
       </article>
 
@@ -179,9 +193,7 @@
         <h3>Dashboard Development</h3>
 
         <p>
-          The query results were imported into Power BI and used to create
-          a single-page dashboard featuring KPI cards and four visualizations
-          designed to support an expansion decision.
+         Using the completed model and DAX measures, I designed a four-page interactive Power BI dashboard covering executive performance, geographic sales, product analysis, and customer insights. I added KPI cards, slicers, navigation buttons, bookmarks, dynamic metric selection, and What-If analysis to support interactive exploration.
         </p>
       </article>
 
@@ -193,22 +205,25 @@
 <section class="case-study-section alternate-section">
   <div class="case-container">
     <h2>Business Questions</h2>
-
     <ul class="case-study-list">
       <li>
-        Which provinces experienced the strongest retail sales growth?
+        How did revenue, profit, order volume, and return rate perform over the analysis period?
+
       </li>
 
       <li>
-        Is there a consistent seasonal pattern in monthly retail sales?
+       Which product categories and individual products generated the most orders, revenue, and returns?
+
       </li>
 
       <li>
-        Which major Canadian city demonstrated the strongest growth?
+        How did sales performance vary across countries, continents, and sales territories?
+
       </li>
 
       <li>
-        How has the share of e-commerce changed over time?
+        Who were the most valuable customers, and how did customer income and occupation relate to purchasing behavior?
+
       </li>
     </ul>
   </div>
@@ -222,23 +237,26 @@
     <div class="insight-grid">
 
       <article class="insight-card">
-        <strong>39%</strong>
-        <span>Quebec retail sales growth from 2018 to 2025</span>
+        <strong>$24.9M</strong>
+        <span>Total revenue generated from January 2020 to June 2022</span>
       </article>
 
       <article class="insight-card">
-        <strong>42%</strong>
-        <span>Montréal growth among selected major cities</span>
+        <strong>$10.5M
+</strong>
+        <span>Total profit generated during the analysis period</span>
       </article>
 
       <article class="insight-card">
-        <strong>7%</strong>
-        <span>E-commerce share of total retail sales in 2025</span>
+        <strong>25K
+</strong>
+        <span>Total customer orders recorded across all sales territories</span>
       </article>
 
       <article class="insight-card">
-        <strong>$320B</strong>
-        <span>Approximate Ontario retail market size</span>
+        <strong>2.2%
+</strong>
+        <span>Overall product return rate across AdventureWorks sales</span>
       </article>
 
     </div>
@@ -248,78 +266,87 @@
 
 <section class="case-study-section alternate-section">
   <div class="case-container">
+
     <div class="finding-block">
-      <h2>Provincial Growth</h2>
+      <h2>Executive Performance</h2>
 
       <p>
-        Between 2018 and 2025, Quebec recorded approximately
-        <strong>39% retail sales growth</strong> while maintaining a
-        substantial market size of approximately
-        <strong>$187 billion</strong>.
+        Between January 2020 and June 2022, AdventureWorks generated
+        approximately <strong>$24.9 million in revenue</strong>,
+        <strong>$10.5 million in profit</strong>, and
+        <strong>25,000 orders</strong>, while maintaining an overall
+        return rate of <strong>2.2%</strong>.
       </p>
 
       <p>
-        Some smaller provinces and territories showed higher percentage
-        growth, but their significantly smaller sales bases make them less
-        comparable for a large-scale retail expansion.
-      </p>
-
-      <p>
-        Ontario remained Canada’s largest retail market at approximately
-        <strong>$320 billion</strong>, with solid growth of around
-        <strong>32%</strong>.
+        Revenue followed a clear upward trend, with stronger growth beginning
+        in the second half of 2021. In the most recent month, revenue reached
+        approximately <strong>$1.83 million</strong>, representing a
+        <strong>3.3% increase</strong> from the previous month.
       </p>
     </div>
 
 
     <div class="finding-block">
-      <h2>Seasonal Sales Pattern</h2>
+      <h2>Geographic Performance</h2>
 
       <p>
-        The analysis revealed a consistent seasonal pattern. Retail sales
-        generally decline in February, rise steadily toward a peak in May,
-        ease during the following months, and increase again near the
-        holiday season.
+        AdventureWorks generated sales across North America, Europe, and the
+        Pacific region. The
+        <strong>United States represented the largest concentration of sales</strong>,
+        followed by Australia, while Canada, the United Kingdom, France, and
+        Germany contributed smaller shares.
       </p>
 
       <p>
-        This pattern can support inventory planning, staffing decisions,
-        and promotional scheduling.
-      </p>
-    </div>
-
-
-    <div class="finding-block">
-      <h2>City-Level Performance</h2>
-
-      <p>
-        Among the cities with seasonally adjusted data, Montréal recorded
-        the highest growth at approximately <strong>42%</strong>, followed
-        by Toronto at <strong>39%</strong> and Vancouver at
-        <strong>35%</strong>.
-      </p>
-
-      <p>
-        Montréal’s strong performance supports the broader provincial
-        findings for Quebec.
+        Interactive continent filters allow users to isolate regional
+        performance and compare sales activity across individual countries
+        and territories.
       </p>
     </div>
 
 
     <div class="finding-block">
-      <h2>E-commerce Growth</h2>
+      <h2>Product and Pricing Analysis</h2>
 
       <p>
-        E-commerce’s share of total retail sales increased from approximately
-        <strong>2.6% in 2017</strong> to <strong>7% in 2025</strong>.
+        Accessories recorded the highest category-level order volume at
+        approximately <strong>17,000 orders</strong>. The
+        <strong>Water Bottle - 30 oz.</strong> ranked as the leading individual
+        product by order volume, while Tires and Tubes represented the most
+        frequently ordered product type. Shorts recorded the highest return
+        volume.
       </p>
 
       <p>
-        Although online sales accelerated sharply in 2020, the share remained
-        elevated afterward, suggesting a long-term structural change rather
-        than a temporary increase.
+        The Product Details page compares monthly orders, revenue, and profit
+        against their targets. A What-If parameter allows users to simulate
+        price adjustments and evaluate their potential effect on product
+        revenue and profitability.
       </p>
     </div>
+
+
+    <div class="finding-block">
+      <h2>Customer Insights</h2>
+
+      <p>
+        AdventureWorks served approximately
+        <strong>17,000 unique customers</strong>, generating an average of
+        <strong>$1,400 in revenue per customer</strong>. Customers in the
+        average-income segment placed the largest number of orders, while
+        professionals represented the leading occupational group.
+      </p>
+
+      <p>
+        <strong>Mr. Maurice Shan</strong> was the highest-revenue customer in
+        the selected analysis, generating approximately
+        <strong>$12,408 from six orders</strong>. Interactive filters allow
+        users to explore customer performance across different years and
+        customer segments.
+      </p>
+    </div>
+
   </div>
 </section>
 
@@ -329,20 +356,29 @@
     <h2>Business Recommendation</h2>
 
     <p>
-      Based on the combination of market size, growth rate, and city-level
-      performance, <strong>Quebec—particularly the Montréal area—emerged
-      as the strongest candidate for further expansion analysis.</strong>
+      AdventureWorks should prioritize inventory and marketing support for
+      its highest-demand product groups, particularly
+      <strong>Accessories and Tires and Tubes</strong>. The company should
+      also investigate the high return volume for Shorts to identify potential
+      issues related to product quality, sizing, or customer expectations.
     </p>
 
     <p>
-      Ontario remains an attractive lower-risk option when overall market
-      size is the primary consideration.
+      Product-level targets should be monitored regularly to identify
+      underperforming products. For products such as the
+      <strong>Water Bottle - 30 oz.</strong>, which performed below its
+      monthly order, revenue, and profit targets, the company could test
+      targeted promotions, product bundles, or pricing adjustments before
+      making broader changes.
     </p>
 
     <p>
-      Regardless of the physical expansion location, the continuing growth
-      of e-commerce suggests that the company should also strengthen its
-      online sales strategy.
+      Customer marketing should focus on the
+      <strong>average-income and professional customer segments</strong>,
+      which generated the highest order volumes. AdventureWorks should also
+      strengthen retention strategies for high-value customers and continue
+      developing its strongest geographic markets while evaluating growth
+      opportunities in other regions.
     </p>
   </div>
 </section>
@@ -353,23 +389,28 @@
     <h2>Project Limitations</h2>
 
     <p>
-      This analysis is based primarily on retail sales volume and historical
-      growth. It does not include several factors that would be necessary
-      for a final expansion decision:
+      This project uses a fictional educational dataset and is intended to
+      demonstrate the complete Power BI development workflow. Although the
+      data supports detailed sales, product, customer, return, and geographic
+      analysis, it does not include several factors required for real-world
+      business decisions:
     </p>
 
     <ul class="case-study-list">
-      <li>Competitive intensity</li>
-      <li>Population and demographic growth</li>
-      <li>Commercial real estate costs</li>
-      <li>Local purchasing power</li>
-      <li>Store operating expenses</li>
-      <li>Industry-specific demand</li>
+      <li>Marketing and promotional campaign costs</li>
+      <li>Inventory levels and product availability</li>
+      <li>Shipping, tax, and operational expenses</li>
+      <li>Competitor pricing and market conditions</li>
+      <li>Supplier and supply-chain performance</li>
+      <li>Real-time sales and customer activity</li>
     </ul>
 
     <p>
-      The findings should therefore be treated as an initial market-screening
-      analysis rather than a final location recommendation.
+      Profit calculations are based on the available product cost and revenue
+      data and may not represent net profitability after all operating
+      expenses. The findings should therefore be treated as a demonstration
+      of analytical and dashboard-development skills rather than a final
+      business strategy.
     </p>
   </div>
 </section>
@@ -377,20 +418,83 @@
 
 <section class="case-study-section">
   <div class="case-container">
-    <h2>Tools & Technologies</h2>
+    <h2>Tools &amp; Technologies</h2>
 
     <div class="case-tools">
-      <span>Python</span>
-      <span>Pandas</span>
-      <span>MySQL</span>
-      <span>SQL</span>
-      <span>Power BI</span>
+      <span>Power BI Desktop</span>
       <span>Power Query</span>
-      <span>Statistics Canada Open Data</span>
+      <span>DAX</span>
+      <span>Data Modeling</span>
+      <span>Data Visualization</span>
+      <span>CSV Data</span>
     </div>
   </div>
 </section>
   </main>
+<script>
+  document.querySelectorAll("[data-slider]").forEach((slider) => {
+    const slides = slider.querySelectorAll(".slider-slide");
+    const previousButton = slider.querySelector(".slider-prev");
+    const nextButton = slider.querySelector(".slider-next");
+    const currentSlideText = slider.querySelector(".current-slide");
+    const totalSlidesText = slider.querySelector(".total-slides");
+    const dotsContainer =
+      slider.parentElement.querySelector(".slider-dots");
 
+    let currentIndex = 0;
+
+    totalSlidesText.textContent = slides.length;
+
+    slides.forEach((slide, index) => {
+      const dot = document.createElement("button");
+
+      dot.classList.add("slider-dot");
+      dot.setAttribute("aria-label", `Show dashboard ${index + 1}`);
+
+      if (index === 0) {
+        dot.classList.add("active");
+      }
+
+      dot.addEventListener("click", () => {
+        showSlide(index);
+      });
+
+      dotsContainer.appendChild(dot);
+    });
+
+    const dots = dotsContainer.querySelectorAll(".slider-dot");
+
+    function showSlide(index) {
+      if (index >= slides.length) {
+        currentIndex = 0;
+      } else if (index < 0) {
+        currentIndex = slides.length - 1;
+      } else {
+        currentIndex = index;
+      }
+
+      slides.forEach((slide) => {
+        slide.classList.remove("active");
+      });
+
+      dots.forEach((dot) => {
+        dot.classList.remove("active");
+      });
+
+      slides[currentIndex].classList.add("active");
+      dots[currentIndex].classList.add("active");
+
+      currentSlideText.textContent = currentIndex + 1;
+    }
+
+    previousButton.addEventListener("click", () => {
+      showSlide(currentIndex - 1);
+    });
+
+    nextButton.addEventListener("click", () => {
+      showSlide(currentIndex + 1);
+    });
+  });
+</script>
 </body>
 </html>

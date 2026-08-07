@@ -171,7 +171,7 @@ body {
 /*   max-width: 900px;
  */  margin-bottom: 16px;
   color: #475569;
-  font-size: 20px;
+  font-size: 17px;
   line-height: 1.8;
 }
 
@@ -182,7 +182,7 @@ body {
 }
 
 .case-study-list li {
-    font-size: 20px;
+    font-size: 17px;
   margin-bottom: 12px;
   line-height: 1.7;
 }
@@ -219,7 +219,7 @@ body {
 
 .process-card p {
   margin-bottom: 12px;
-  font-size: 20px;
+  font-size: 17px;
 }
 
 .insight-grid {
