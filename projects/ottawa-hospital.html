@@ -1,0 +1,514 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  >
+
+  <title>Hospital Performance Analysis | Sara Ahmadi</title>
+
+  <link rel="stylesheet" href="../css/projects/advantureworks.css">
+</head>
+
+<body>
+
+  <nav class="project-nav">
+    <a class="site-name" href="../index.html">
+      Sara Ahmadi
+    </a>
+
+    <a class="back-link" href="../index.html#projects">
+      ← Back to Portfolio
+    </a>
+  </nav>
+
+  <main>
+    <header class="case-hero">
+  <div class="case-container">
+
+    <span class="case-label">
+      POWER BI · POWER QUERY · DAX
+    </span>
+
+    <h1>Hospital Performance Analysis</h1>
+
+    <p class="case-intro">
+      An end-to-end Power BI analysis of hospital operations, patient trends, departmental performance, wait times, and revenue.
+    </p>
+
+
+    <div class="case-actions">
+          <a
+            class="case-button primary-button"
+            href="https://github.com/saraahmadi-bi/Ottawa-hospital-performance-analysis"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            View GitHub Repository
+          </a>
+
+        </div>
+
+    
+
+  </div>
+</header>
+
+  
+    <section class="dashboard-gallery">
+  <h2>Dashboard Pages</h2>
+
+  <div class="project-slider" data-slider>
+    <div class="slider-slides">
+
+      <figure class="slider-slide active">
+        <img
+          src="..\\assets\\images\\ottawa-hospital\\executive-summary.png"
+          alt="Ottawa Hospital Executive Summary dashboard"
+        >
+
+        <figcaption>Executive Summary</figcaption>
+      </figure>
+
+      <figure class="slider-slide">
+        <img
+          src="..\\assets\\images\\ottawa-hospital/patient-analysis.png"
+          alt="Ottawa Hospital Patient Analysis dashboard"
+        >
+        <figcaption>Patient Analysis</figcaption>
+      </figure>
+
+      <figure class="slider-slide">
+        <img
+          src="..\\assets\\images\\ottawa-hospital/department-details.png"
+          alt="Ottawa Hospital Departmental Performance dashboard"
+        >
+        <figcaption>Department Details</figcaption>
+      </figure>
+
+      <figure class="slider-slide">
+        <img
+          src="..\\assets\\images\\ottawa-hospital/data-model.png"
+          alt="Ottawa Hospital Data Model"
+        >
+        <figcaption>Data Model</figcaption>
+      </figure>
+      <figure class="slider-slide">
+              <img
+                src="..\\assets\\images\\adventureworks-data-model.png"
+                alt="AdventureWorks Customer Details dashboard"
+              >
+              <figcaption>Data Modeling</figcaption>
+      </figure>
+    </div>
+
+    <button class="slider-button slider-prev" aria-label="Previous dashboard">
+      &#10094;
+    </button>
+
+    <button class="slider-button slider-next" aria-label="Next dashboard">
+      &#10095;
+    </button>
+
+    <div class="slider-counter">
+      <span class="current-slide">1</span>
+      <span>/</span>
+      <span class="total-slides">4</span>
+    </div>
+  </div>
+
+  <div class="slider-dots" aria-label="Choose dashboard page"></div>
+</section>
+    <section class="case-study-section">
+  <div class="case-container">
+    <h2>Project Overview</h2>
+<p>
+  This project presents an end-to-end Power BI analysis of hospital operations and performance. 
+  The report examines patient visits, wait times, satisfaction ratings, departmental activity, 
+  treatment patterns, and billed revenue to provide a clear view of overall hospital performance.
+</p>
+
+<p>
+  The interactive dashboard is organized into three pages: Executive Summary, Department Details, 
+  and Patient Analysis. It enables users to explore key performance indicators, compare departments, 
+  identify operational trends, and support data-driven decisions related to patient experience, 
+  resource planning, and service delivery.
+</p>
+  </div>
+</section>
+
+
+<section class="case-study-section alternate-section">
+  <div class="case-container">
+    <h2>Data Source</h2>
+
+    <p>
+  The dataset used in this project was provided as 10 separate CSV files extracted from a simulated 
+  hospital database. These files contain information about hospitals, cities, departments, doctors, 
+  patients, insurance plans, treatments, appointments, visits, and billing.
+</p>
+
+<p>
+  An additional Date table was created in Power BI to support time-based analysis, bringing the final 
+  data model to 11 tables. The files were cleaned, transformed, and connected through relationships 
+  before the report and DAX measures were developed.
+</p>
+
+<p>
+  All data used in this project is entirely fictional and was created for educational and portfolio 
+  purposes. It does not represent real patients, healthcare providers, hospitals, or financial records.
+</p>
+  </div>
+</section>
+
+
+<section class="case-study-section">
+  <div class="case-container">
+    <h2>Analysis Process</h2>
+
+    <div class="process-grid">
+
+      <article class="process-card">
+        <span class="process-number">01</span>
+
+        <h3>Data Preparation</h3>
+
+      <p>
+  I imported 10 CSV files into Power BI and used Power Query to clean and transform the data. 
+  This included checking missing values and duplicates, correcting data types, standardizing 
+  fields, and preparing the hospital, department, doctor, patient, appointment, visit, 
+  treatment, insurance, and billing data for analysis.
+</p>
+
+      </article>
+
+
+      <article class="process-card">
+        <span class="process-number">02</span>
+
+        <h3>Data Modeling & DAX</h3>
+
+       <p>
+  I developed a relational data model connecting the Visits and Billing data with the 
+  supporting lookup tables through one-to-many relationships. I also created a dedicated 
+  Date table and developed DAX measures for visits, wait times, patient satisfaction, 
+  insurance coverage, departmental performance, and billed revenue.
+</p>
+
+      </article>
+
+
+      <article class="process-card">
+        <span class="process-number">03</span>
+
+        <h3>Dashboard Development</h3>
+
+       <p>
+  Using the completed data model and DAX measures, I designed a three-page interactive 
+  Power BI report covering executive performance, departmental details, and patient analysis. 
+  The report includes KPI cards, trend charts, slicers, navigation buttons, and interactive 
+  visualizations to support operational and strategic decision-making.
+</p>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+
+<section class="case-study-section alternate-section">
+  <div class="case-container">
+    <h2>Business Questions</h2>
+    <ul class="case-study-list">
+      <li>
+    How did patient visits, wait times, satisfaction ratings, and billed revenue 
+    perform during the analysis period?
+  </li>
+
+  <li>
+    Which departments handled the most patient visits and generated the highest 
+    billed revenue?
+  </li>
+
+  <li>
+    How did hospital performance vary between weekdays and weekends, and when 
+    were the busiest days and hours?
+  </li>
+
+  <li>
+    What were the main patient demographics, visit types, treatment patterns, 
+    and insurance coverage trends?
+  </li>
+
+  <li>
+    Which departments had longer wait times or lower patient satisfaction and 
+    may require operational improvement?
+  </li>
+    </ul>
+  </div>
+</section>
+
+
+<section class="case-study-section">
+  <div class="case-container">
+    <h2>Key Findings</h2>
+
+    <div class="insight-grid">
+
+      <article class="insight-card">
+        <strong>15,000</strong>
+        <span>Total patient visits recorded during the analysis period</span>
+      </article>
+
+      <article class="insight-card">
+        <strong>$11.9M</strong>
+        <span>Total gross billed revenue generated across all departments</span>
+      </article>
+<article class="insight-card">
+        <strong>4.5 / 5</strong>
+        <span>Average patient satisfaction rating across hospital visits</span>
+      </article>
+      <article class="insight-card">
+        <strong>43 min</strong>
+        <span>Average patient wait time across all hospital visits</span>
+      </article>
+
+      <article class="insight-card">
+        <strong>89.82%</strong>
+        <span>Patient visits covered by an insurance plan</span>
+      </article>
+     
+
+      <article class="insight-card">
+        <strong>2:00 PM – 2:59 PM</strong>
+        <span>Busiest hour of the day based on the number of patient visits</span>
+      </article>
+    </div>
+  </div>
+</section>
+
+
+<section class="case-study-section alternate-section">
+  <div class="case-container">
+
+    <div class="finding-block">
+      <h2>Executive Performance</h2>
+
+      <p>
+        During the analysis period, the hospital recorded
+        <strong>15,000 patient visits</strong> and generated approximately
+        <strong>$11.9 million in gross billed revenue</strong>. The average
+        patient satisfaction rating was <strong>4.5 out of 5</strong>.
+      </p>
+
+      <p>
+        The average patient wait time was <strong>43 minutes</strong>, while
+        <strong>89.82% of visits were covered by an insurance plan</strong>.
+        These indicators provide an overall view of the hospital’s financial,
+        operational, and patient-service performance.
+      </p>
+    </div>
+
+    <div class="finding-block">
+      <h2>Department Performance</h2>
+
+      <p>
+        Department-level analysis compares patient visits, billed revenue,
+        average wait times, and satisfaction ratings across the hospital.
+        This makes it possible to identify departments experiencing higher
+        demand, stronger financial performance, or potential service delays.
+      </p>
+
+      <p>
+        Interactive department filters allow users to examine performance
+        trends for individual departments and compare actual wait times with
+        the established target.
+      </p>
+    </div>
+
+    
+
+    <div class="finding-block">
+      <h2>Patient Insights</h2>
+
+      <p>
+        The Patient Analysis page examines patient demographics and visit
+        patterns by age group, gender, city, visit type, and insurance
+        coverage. It also compares inpatient, outpatient, and emergency
+        activity across the hospital.
+      </p>
+
+      <p>
+        Additional analysis explores average length of stay by department
+        and the distribution of patient satisfaction ratings. Interactive
+        slicers allow users to investigate how patient characteristics and
+        service experiences vary across different groups.
+      </p>
+    </div>
+<div class="finding-block">
+      <h2>Operational Insights</h2>
+
+      <p>
+        Patient demand varied by day and hour, with
+        <strong>2:00 PM to 2:59 PM identified as the busiest hour</strong>
+        based on visit volume. The report also compares weekday and weekend
+        activity to reveal differences in hospital utilization.
+      </p>
+
+      <p>
+        The operational analysis helps identify peak service periods and
+        supports better staffing, scheduling, and resource allocation.
+        Monthly trends also allow users to monitor changes in visits and
+        wait times throughout the analysis period.
+      </p>
+    </div>
+  </div>
+</section>
+
+
+<section class="case-study-section recommendation-section">
+  <div class="case-container">
+    <h2>Business Recommendations</h2>
+
+    <p>
+      The hospital should review staffing levels and resource allocation during
+      peak service periods, particularly between
+      <strong>2:00 PM and 2:59 PM</strong>, which recorded the highest patient
+      visit volume. Aligning staff schedules with demand could help reduce the
+      current <strong>43-minute average wait time</strong> and improve patient flow.
+    </p>
+
+    <p>
+      Departments with longer wait times or lower patient satisfaction should
+      be prioritized for further investigation. Hospital management should
+      regularly compare departmental performance against established wait-time
+      targets and evaluate potential causes such as staffing shortages,
+      scheduling inefficiencies, or limited treatment capacity.
+    </p>
+
+    <p>
+      The hospital should continue monitoring patient satisfaction, length of
+      stay, visit patterns, and insurance coverage across different patient
+      groups. With <strong>89.82% of visits covered by insurance</strong>,
+      billing and coverage processes should also be reviewed regularly to
+      maintain accurate revenue reporting and identify any gaps in coverage.
+    </p>
+  </div>
+</section>
+
+<section class="case-study-section alternate-section">
+  <div class="case-container">
+    <h2>Project Limitations</h2>
+
+    <p>
+      This project uses a fictional educational dataset and is intended to
+      demonstrate an end-to-end Power BI development workflow. Although the
+      dataset supports analysis of hospital operations, patients, departments,
+      visits, treatments, insurance coverage, and billing, it does not include
+      several factors required for real-world healthcare decision-making:
+    </p>
+
+    <ul class="case-study-list">
+      <li>Real patient and clinical records</li>
+      <li>Detailed staffing levels and employee schedules</li>
+      <li>Clinical outcomes and readmission rates</li>
+      <li>Hospital operating costs and net profitability</li>
+      <li>Detailed diagnoses, medications, and treatment outcomes</li>
+      <li>Real-time patient flow and bed-capacity information</li>
+    </ul>
+
+    <p>
+      Revenue analysis is based on the available billing data and represents
+      gross billed revenue rather than collected revenue or net profit. The
+      findings should therefore be treated as a demonstration of data modeling,
+      DAX, analytical thinking, and dashboard-development skills rather than
+      recommendations for a real healthcare organization.
+    </p>
+  </div>
+</section>
+
+<section class="case-study-section">
+  <div class="case-container">
+    <h2>Tools &amp; Technologies</h2>
+
+    <div class="case-tools">
+      <span>Power BI Desktop</span>
+      <span>Power Query</span>
+      <span>DAX</span>
+      <span>Data Modeling</span>
+      <span>Data Visualization</span>
+      <span>CSV Data</span>
+    </div>
+  </div>
+</section>
+  </main>
+<script>
+  document.querySelectorAll("[data-slider]").forEach((slider) => {
+    const slides = slider.querySelectorAll(".slider-slide");
+    const previousButton = slider.querySelector(".slider-prev");
+    const nextButton = slider.querySelector(".slider-next");
+    const currentSlideText = slider.querySelector(".current-slide");
+    const totalSlidesText = slider.querySelector(".total-slides");
+    const dotsContainer =
+      slider.parentElement.querySelector(".slider-dots");
+
+    let currentIndex = 0;
+
+    totalSlidesText.textContent = slides.length;
+
+    slides.forEach((slide, index) => {
+      const dot = document.createElement("button");
+
+      dot.classList.add("slider-dot");
+      dot.setAttribute("aria-label", `Show dashboard ${index + 1}`);
+
+      if (index === 0) {
+        dot.classList.add("active");
+      }
+
+      dot.addEventListener("click", () => {
+        showSlide(index);
+      });
+
+      dotsContainer.appendChild(dot);
+    });
+
+    const dots = dotsContainer.querySelectorAll(".slider-dot");
+
+    function showSlide(index) {
+      if (index >= slides.length) {
+        currentIndex = 0;
+      } else if (index < 0) {
+        currentIndex = slides.length - 1;
+      } else {
+        currentIndex = index;
+      }
+
+      slides.forEach((slide) => {
+        slide.classList.remove("active");
+      });
+
+      dots.forEach((dot) => {
+        dot.classList.remove("active");
+      });
+
+      slides[currentIndex].classList.add("active");
+      dots[currentIndex].classList.add("active");
+
+      currentSlideText.textContent = currentIndex + 1;
+    }
+
+    previousButton.addEventListener("click", () => {
+      showSlide(currentIndex - 1);
+    });
+
+    nextButton.addEventListener("click", () => {
+      showSlide(currentIndex + 1);
+    });
+  });
+</script>
+</body>
+</html>
