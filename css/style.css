@@ -4,16 +4,32 @@
       padding: 0;
     }
 
+    :root {
+      --forest-950: #0d2f26;
+      --forest-900: #123d31;
+      --forest-700: #245b43;
+      --forest-600: #2f704f;
+      --gold-500: #d9c65a;
+      --gold-600: #c8ad3f;
+      --ivory-50: #faf9f2;
+      --mint-50: #f3f7f4;
+      --mint-100: #e8f0eb;
+      --mint-200: #d7e4dc;
+      --text-900: #26332e;
+      --text-600: #52615a;
+      --white: #ffffff;
+    }
+
     body {
       font-family: Arial, sans-serif;
       line-height: 1.6;
-      background: #f5f7fa;
-      color: #1f2937;
+      background: var(--ivory-50);
+      color: var(--text-900);
     }
 
     header {
-      background: linear-gradient(135deg, #13233a, #1f4e78);
-      color: white;
+      background: linear-gradient(135deg, var(--forest-950), var(--forest-600));
+      color: var(--white);
       text-align: center;
       padding: 90px 20px;
     }
@@ -32,22 +48,22 @@
     header p {
 /*       max-width: 700px;
  */      margin: auto;
-      color: #e5e7eb;
+      color: var(--mint-100);
     }
 
     .button {
       display: inline-block;
       margin-top: 25px;
       padding: 12px 24px;
-      background: #f2c811;
-      color: #111827;
+      background: var(--gold-500);
+      color: var(--forest-950);
       text-decoration: none;
       border-radius: 6px;
       font-weight: bold;
     }
 
     nav {
-      background: white;
+      background: var(--white);
       padding: 16px;
       text-align: center;
       position: sticky;
@@ -56,7 +72,7 @@
     }
 
     nav a {
-      color: #1f2937;
+      color: var(--forest-900);
       text-decoration: none;
       margin: 0 18px;
       font-weight: bold;
@@ -72,7 +88,7 @@
       text-align: center;
       font-size: 32px;
       margin-bottom: 35px;
-      color: #1f4e78;
+      color: var(--forest-700);
     }
 
     .about {
@@ -96,13 +112,13 @@
     } */
 #skills {
   padding: 70px 20px;
-  background: #f4f7fb;
+  background: var(--mint-50);
 }
 
 #skills h2 {
   margin-bottom: 40px;
   text-align: center;
-  color: #17365d;
+  color: var(--forest-700);
   font-size: 34px;
 }
 
@@ -116,15 +132,15 @@
 
 .skill-category {
   padding: 28px;
-  background: #ffffff;
-  border: 1px solid #e2e8f0;
+  background: var(--white);
+  border: 1px solid var(--mint-200);
   border-radius: 14px;
   box-shadow: 0 8px 24px rgba(15, 23, 42, 0.07);
 }
 
 .skill-category h3 {
   margin-bottom: 22px;
-  color: #17365d;
+  color: var(--forest-700);
   font-size: 19px;
 }
 
@@ -136,22 +152,22 @@
 
 .skill-list span {
   padding: 9px 14px;
-  background: #f3f6fa;
-  border: 1px solid #dbe3ec;
+  background: var(--mint-50);
+  border: 1px solid var(--mint-200);
   border-radius: 999px;
-  color: #1f2937;
+  color: var(--text-900);
   font-size: 14px;
   white-space: nowrap;
 }
 
 .skill-list span:hover {
-  background: #d4af37;
-  border-color: #d4af37;
-  color: #172f4f;
+  background: var(--gold-500);
+  border-color: var(--gold-500);
+  color: var(--forest-950);
 }
 .skill-list span {
-  background: #f8fafc;
-  border: 1px solid #dbe3ec;
+  background: var(--mint-50);
+  border: 1px solid var(--mint-200);
   padding: 8px 13px;
   font-size: 13px;
 }
@@ -159,8 +175,8 @@
   min-height: 280px;
 }
 .skill-category h3 {
-  color: #17365d;
-  border-bottom: 2px solid #d4af37;
+  color: var(--forest-700);
+  border-bottom: 2px solid var(--gold-500);
   padding-bottom: 10px;
 }
 .skill-grid {
@@ -184,7 +200,7 @@
   display: flex;
   flex-direction: column;
   overflow: hidden;
-  background: #ffffff;
+  background: var(--white);
   border-radius: 12px;
   box-shadow: 0 5px 16px rgba(0, 0, 0, 0.1);
   transition:
@@ -202,7 +218,7 @@
   width: 100%;
   aspect-ratio: 16 / 8;
   overflow: hidden;
-  background: #f8fafc;
+  background: var(--mint-50);
 }
 
 .project-preview img {
@@ -223,8 +239,8 @@
   left: 16px;
   padding: 7px 12px;
   border-radius: 999px;
-  background: rgba(23, 54, 93, 0.92);
-  color: #ffffff;
+  background: var(--gold-500);
+  color: var(--forest-950);
   font-size: 12px;
   font-weight: 700;
 }
@@ -238,14 +254,14 @@
 .project-content h3 {
   min-height: 35px;
   margin: 0 0 12px;
-  color: #17365d;
+  color: var(--forest-700);
   font-size: 18px;
   line-height: 1.35;
 }
 
 .project-content p {
   margin: 0 0 20px;
-  color: #4b5563;
+  color: var(--text-600);
   line-height: 1.65;
 
   text-align: justify;
@@ -260,16 +276,16 @@
   align-self: flex-start;
   margin-top: auto;
   padding: 10px 16px;
-  border: 1px solid #17365d;
+  border: 1px solid var(--forest-700);
   border-radius: 7px;
-  color: #17365d;
+  color: var(--forest-700);
   text-decoration: none;
   font-weight: 700;
 }
 
 .project-link:hover {
-  background: #17365d;
-  color: #ffffff;
+  background: var(--forest-700);
+  color: var(--white);
 }
 
     .contact {
@@ -277,8 +293,8 @@
     }
 
     footer {
-      background: #13233a;
-      color: white;
+      background: var(--forest-950);
+      color: var(--white);
       text-align: center;
       padding: 25px;
     }
@@ -295,8 +311,8 @@
     }
 
 .hero {
-  background: linear-gradient(135deg, #13233a, #1f4e78);
-  color: white;
+  background: linear-gradient(135deg, var(--forest-950), var(--forest-600));
+  color: var(--white);
   padding: 45px 20px;
 }
 .hero-content {
@@ -317,7 +333,7 @@
   font-size: clamp(42px, 5vw, 25px);
   font-weight: 700;
   letter-spacing: 1.8px;
-  color: #D4AF37;
+  color: var(--gold-500);
 }
 
 .hero-content h1 {
@@ -340,7 +356,7 @@
   margin-bottom: 24px;
   font-size: clamp(24px, 2.5vw, 38px);
   line-height: 1.25;
-  color: #ffffff;
+  color: var(--gold-500);
 }
 
 /* .hero-description {
@@ -356,14 +372,14 @@ max-width: auto;
  margin: 14px 0;
   font-size: 17px;
   line-height: 1.75;
-  color: #e2e8f0;
+  color: var(--mint-100);
 }
 
 .hero-description.secondary {
   margin: 14px 0;
   font-size: 17px;
   line-height: 1.75;
-  color: #e2e8f0;
+  color: var(--mint-100);
 }
 
 .hero-skills {
@@ -375,12 +391,12 @@ max-width: auto;
 
 .hero-skills span {
   padding: 8px 14px;
-  border: 1px solid rgba(255, 255, 255, 0.24);
+  border: 1px solid rgba(217, 198, 90, 0.58);
   border-radius: 999px;
-  background: rgba(255, 255, 255, 0.08);
+  background: rgba(255, 255, 255, 0.06);
   font-size: 14px;
   font-weight: 600;
-  color: #ffffff;
+  color: var(--white);
 }
 
 .hero-actions {
@@ -410,14 +426,15 @@ max-width: auto;
 }
 
 .secondary-button, .primary-button {
-  border: 1px solid rgba(255, 255, 255, 0.65);
-  color: #ffffff;
-  background: #D4AF37;
+  border: 1px solid var(--gold-500);
+  color: var(--forest-950);
+  background: var(--gold-500);
 }
 
 .secondary-button:hover, .primary-button:hover {
-  background: rgba(255, 255, 255, 0.1);
-  border-color: #ffffff;
+  background: var(--gold-600);
+  border-color: var(--gold-600);
+  color: var(--forest-950);
 }
 
 

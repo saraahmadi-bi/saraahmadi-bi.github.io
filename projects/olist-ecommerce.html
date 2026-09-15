@@ -1,0 +1,536 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  >
+
+  <meta
+    name="description"
+    content="An end-to-end Olist e-commerce analytics project using Python, MySQL, SQL, DAX, and Power BI."
+  >
+
+  <title>Olist E-Commerce Analytics | Sara Ahmadi</title>
+
+  <link rel="stylesheet" href="../css/projects/project-common.css">
+</head>
+
+<body>
+
+  <nav class="project-nav">
+    <a class="back-link" href="../index.html#projects">
+      &larr; Back to Portfolio
+    </a>
+    <a class="site-name" href="../index.html">
+      Sara Ahmadi
+    </a>
+
+    
+  </nav>
+
+  <main>
+    <header class="case-hero">
+      <div class="case-container">
+
+        <span class="case-label">
+          PYTHON &middot; MYSQL &middot; POWER BI &middot; DAX
+        </span>
+
+        <h1>Olist E-Commerce Analytics</h1>
+
+        <p class="case-intro">
+          An end-to-end analysis of marketplace sales, customers, products,
+          sellers, payments, delivery performance, reviews, and geographic trends.
+        </p>
+
+        <div class="case-actions">
+          <a
+            class="case-button primary-button"
+            href="https://github.com/saraahmadi-bi/olist-ecommerce-analysis"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            View GitHub Repository
+          </a>
+        </div>
+
+      </div>
+    </header>
+
+
+    <section class="dashboard-gallery">
+      <h2>Dashboard Pages</h2>
+
+      <div class="project-slider" data-slider>
+        <div class="slider-slides">
+
+          <figure class="slider-slide active">
+            <img
+              src="../assets/images/olist-ecommerce/01-executive-overview.png"
+              alt="Olist E-Commerce Executive Overview dashboard"
+            >
+            <figcaption>Executive Overview</figcaption>
+          </figure>
+
+          <figure class="slider-slide">
+            <img
+              src="../assets/images/olist-ecommerce/02-sales-orders.png"
+              alt="Olist E-Commerce Sales and Orders dashboard"
+            >
+            <figcaption>Sales &amp; Orders</figcaption>
+          </figure>
+
+          <figure class="slider-slide">
+            <img
+              src="../assets/images/olist-ecommerce/03-customers.png"
+              alt="Olist E-Commerce Customers dashboard"
+            >
+            <figcaption>Customers</figcaption>
+          </figure>
+
+          <figure class="slider-slide">
+            <img
+              src="../assets/images/olist-ecommerce/04-products-sellers.png"
+              alt="Olist E-Commerce Products and Sellers dashboard"
+            >
+            <figcaption>Products &amp; Sellers</figcaption>
+          </figure>
+
+          <figure class="slider-slide">
+            <img
+              src="../assets/images/olist-ecommerce/05-delivery-reviews.png"
+              alt="Olist E-Commerce Delivery and Reviews dashboard"
+            >
+            <figcaption>Delivery &amp; Reviews</figcaption>
+          </figure>
+
+          <figure class="slider-slide">
+            <img
+              src="../assets/images/olist-ecommerce/06-geographical-analysis-cities.png"
+              alt="Olist E-Commerce geographic analysis of customer cities"
+            >
+            <figcaption>Geographic Analysis: Cities</figcaption>
+          </figure>
+
+          <figure class="slider-slide">
+            <img
+              src="../assets/images/olist-ecommerce/07-geographical-analysis-sellers.png"
+              alt="Olist E-Commerce geographic analysis of top sellers"
+            >
+            <figcaption>Geographic Analysis: Sellers</figcaption>
+          </figure>
+
+        </div>
+
+        <button class="slider-button slider-prev" aria-label="Previous dashboard">
+          &#10094;
+        </button>
+
+        <button class="slider-button slider-next" aria-label="Next dashboard">
+          &#10095;
+        </button>
+
+        <div class="slider-counter">
+          <span class="current-slide">1</span>
+          <span>/</span>
+          <span class="total-slides">7</span>
+        </div>
+      </div>
+
+      <div class="slider-dots" aria-label="Choose dashboard page"></div>
+    </section>
+
+
+    <section class="case-study-section">
+      <div class="case-container">
+        <h2>Project Overview</h2>
+
+        <p>
+          I started this project to strengthen my Python, SQL, and Power BI skills
+          through one complete analytics workflow. Instead of practising each tool
+          separately, I worked from the original marketplace files through data
+          preparation, relational modeling, business analysis, and dashboard design.
+        </p>
+
+        <p>
+          The final Power BI report contains six interactive pages covering executive
+          performance, sales and orders, customers, products and sellers, delivery and
+          reviews, and geographic analysis. The report helps users follow marketplace
+          performance and investigate the operational factors behind the results.
+        </p>
+      </div>
+    </section>
+
+
+    <section class="case-study-section alternate-section">
+      <div class="case-container">
+        <h2>Data Source</h2>
+
+        <p>
+          The project uses the
+          <a
+            href="https://www.kaggle.com/datasets/olistbr/brazilian-ecommerce"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Brazilian E-Commerce Public Dataset by Olist
+          </a>.
+          It contains anonymized marketplace data for orders, customers, products,
+          sellers, order items, payments, reviews, geolocation, and product-category
+          translations.
+        </p>
+
+        <p>
+          The dataset covers orders placed between 2016 and 2018. Because September
+          and October 2018 contain incomplete activity, monthly trend analysis ends in
+          August 2018 to avoid presenting partial months as a business decline.
+        </p>
+
+        <p>
+          The data represents historical activity from the Olist marketplace and is
+          intended for analytical and educational use. Customer and seller identifiers
+          are anonymized.
+        </p>
+      </div>
+    </section>
+
+
+    <section class="case-study-section">
+      <div class="case-container">
+        <h2>Analysis Process</h2>
+
+        <div class="process-grid">
+
+          <article class="process-card">
+            <span class="process-number">01</span>
+            <h3>Python Data Preparation</h3>
+            <p>
+              I audited and cleaned nine source datasets with Python and Pandas. I
+              checked missing values, duplicates, data types, date fields, and record
+              consistency, then created analysis-ready features for delivery time,
+              delivery performance, item count, product value, freight value, order
+              totals, and payment differences.
+            </p>
+          </article>
+
+          <article class="process-card">
+            <span class="process-number">02</span>
+            <h3>MySQL Modeling &amp; Analysis</h3>
+            <p>
+              I designed fact and dimension tables in MySQL, added primary and foreign
+              keys, and tested referential integrity. I then wrote SQL queries to
+              examine order status, revenue, monthly trends, product categories,
+              seller performance, payment methods, delivery results, and repeat
+              customers.
+            </p>
+          </article>
+
+          <article class="process-card">
+            <span class="process-number">03</span>
+            <h3>Power BI Development</h3>
+            <p>
+              I built the Power BI semantic model with a dedicated Date table and
+              single-direction relationships. I created DAX measures and designed an
+              interactive report with KPI cards, synchronized date filters, metric
+              switching, cross-filtering, custom tooltips, bookmarks, Top-N analysis,
+              Key Influencers, and Azure Maps.
+            </p>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+
+    <section class="case-study-section alternate-section">
+      <div class="case-container">
+        <h2>Business Questions</h2>
+
+        <ul class="case-study-list">
+          <li>How did sales and order volume change over time?</li>
+          <li>Which states and product categories generated the most sales?</li>
+          <li>How many customers returned to place additional orders?</li>
+          <li>Which product categories and sellers performed best?</li>
+          <li>How much value came from each payment method?</li>
+          <li>What percentage of orders arrived on time?</li>
+          <li>Which delivery factors were associated with low review scores?</li>
+          <li>Which customer cities and seller locations contributed the most sales?</li>
+        </ul>
+      </div>
+    </section>
+
+
+    <section class="case-study-section">
+      <div class="case-container">
+        <h2>Key Findings</h2>
+
+        <div class="insight-grid">
+          <article class="insight-card">
+            <strong>R$15.42M</strong>
+            <span>Total sales recorded during the analysis period</span>
+          </article>
+
+          <article class="insight-card">
+            <strong>99,441</strong>
+            <span>Total customer orders</span>
+          </article>
+
+          <article class="insight-card">
+            <strong>96,096</strong>
+            <span>Unique customers</span>
+          </article>
+
+          <article class="insight-card">
+            <strong>97.0%</strong>
+            <span>Orders successfully delivered</span>
+          </article>
+
+          <article class="insight-card">
+            <strong>93.2%</strong>
+            <span>Orders delivered on time</span>
+          </article>
+
+          <article class="insight-card">
+            <strong>3.1%</strong>
+            <span>Repeat customer rate</span>
+          </article>
+        </div>
+      </div>
+    </section>
+
+
+    <section class="case-study-section alternate-section">
+      <div class="case-container">
+
+        <div class="finding-block">
+          <h2>Sales &amp; Order Performance</h2>
+
+          <p>
+            The marketplace generated <strong>R$15.42 million in total sales</strong>
+            from <strong>99,441 orders</strong>, with an average order value of
+            <strong>R$159.83</strong>. Monthly sales and order volume increased
+            substantially through 2017 and remained comparatively strong during the
+            complete months of 2018.
+          </p>
+
+          <p>
+            Credit cards accounted for <strong>78.5% of payment value</strong>, while
+            boleto represented 18.0%. This concentration makes card-payment reliability
+            and payment-processing performance important to marketplace operations.
+          </p>
+        </div>
+
+        <div class="finding-block">
+          <h2>Customer Behavior</h2>
+
+          <p>
+            The analysis identified <strong>96,096 unique customers</strong>, but only
+            <strong>3.1% were repeat customers</strong>. Average orders per customer
+            remained close to one, showing that most customers purchased only once
+            during the available period.
+          </p>
+
+          <p>
+            Customer activity was concentrated in major urban markets. S&atilde;o Paulo
+            was the leading customer city, followed by Rio de Janeiro and Belo Horizonte.
+          </p>
+        </div>
+
+        <div class="finding-block">
+          <h2>Products &amp; Sellers</h2>
+
+          <p>
+            The marketplace sold <strong>110,197 items</strong> through
+            <strong>2,970 active sellers</strong>. Health &amp; Beauty, Watches &amp; Gifts,
+            and Bed &amp; Bath were the three leading product categories by sales.
+          </p>
+
+          <p>
+            Seller performance varied considerably. The scatter analysis compares items
+            sold with product sales, while bubble size represents freight value, making
+            it easier to identify high-volume sellers and sellers with higher delivery costs.
+          </p>
+        </div>
+
+        <div class="finding-block">
+          <h2>Delivery &amp; Reviews</h2>
+
+          <p>
+            The overall delivery rate was <strong>97.0%</strong>, and
+            <strong>93.2% of evaluated orders arrived on time</strong>. Average delivery
+            time was 12.56 days, and the average review score was 4.09 out of 5.
+          </p>
+
+          <p>
+            Delivery performance had a clear relationship with customer feedback.
+            On-time orders received far more five-star reviews, while late and
+            non-delivered orders had substantially higher shares of one-star reviews.
+          </p>
+        </div>
+
+        <div class="finding-block">
+          <h2>Geographic Performance</h2>
+
+          <p>
+            S&atilde;o Paulo generated approximately <strong>R$5.77 million</strong> in
+            customer sales, followed by Rio de Janeiro and Minas Gerais. The geographic
+            report also maps the top 30 customer cities and the locations of the top 30
+            sellers by product sales.
+          </p>
+
+          <p>
+            A bookmark-based Cities and Sellers switch allows users to compare demand
+            concentration with the geographic distribution of leading suppliers.
+          </p>
+        </div>
+
+      </div>
+    </section>
+
+
+    <section class="case-study-section recommendation-section">
+      <div class="case-container">
+        <h2>Business Recommendations</h2>
+
+        <p>
+          Olist should investigate the low repeat customer rate and test retention
+          initiatives such as post-purchase communication, personalized product
+          recommendations, and targeted offers for customers who completed their first
+          successful order.
+        </p>
+
+        <p>
+          Delivery performance should remain a priority because late and non-delivered
+          orders are strongly associated with low reviews. Seller-level monitoring can
+          identify partners with recurring delays, unusually high freight costs, or
+          weaker customer feedback.
+        </p>
+
+        <p>
+          Commercial planning should protect performance in S&atilde;o Paulo, Rio de
+          Janeiro, and other major markets while testing growth opportunities outside
+          the strongest regions. Category strategy should prioritize leading categories
+          while also considering seller capacity, freight cost, and delivery reliability.
+        </p>
+      </div>
+    </section>
+
+
+    <section class="case-study-section alternate-section">
+      <div class="case-container">
+        <h2>Project Limitations</h2>
+
+        <p>
+          The dataset provides detailed historical marketplace activity but does not
+          include several factors required for a complete commercial assessment:
+        </p>
+
+        <ul class="case-study-list">
+          <li>Marketing campaigns and customer-acquisition costs</li>
+          <li>Website visits, browsing behavior, and conversion rates</li>
+          <li>Product cost, operating expenses, and net profitability</li>
+          <li>Inventory availability and seller fulfillment capacity</li>
+          <li>Customer demographics beyond the available location fields</li>
+          <li>Marketplace activity after the historical dataset period</li>
+        </ul>
+
+        <p>
+          September and October 2018 contain partial data, so monthly comparisons end in
+          August 2018. The results describe the available historical records and should
+          not be interpreted as a forecast of current marketplace performance.
+        </p>
+      </div>
+    </section>
+
+
+    <section class="case-study-section">
+      <div class="case-container">
+        <h2>Tools &amp; Technologies</h2>
+
+        <div class="case-tools">
+          <span>Python</span>
+          <span>Pandas</span>
+          <span>MySQL</span>
+          <span>SQL</span>
+          <span>Power BI Desktop</span>
+          <span>Power Query</span>
+          <span>DAX</span>
+          <span>Data Modeling</span>
+          <span>Azure Maps</span>
+          <span>Git &amp; GitHub</span>
+        </div>
+      </div>
+    </section>
+  </main>
+
+
+  <script>
+    document.querySelectorAll("[data-slider]").forEach((slider) => {
+      const slides = slider.querySelectorAll(".slider-slide");
+      const previousButton = slider.querySelector(".slider-prev");
+      const nextButton = slider.querySelector(".slider-next");
+      const currentSlideText = slider.querySelector(".current-slide");
+      const totalSlidesText = slider.querySelector(".total-slides");
+      const dotsContainer =
+        slider.parentElement.querySelector(".slider-dots");
+
+      let currentIndex = 0;
+
+      totalSlidesText.textContent = slides.length;
+
+      slides.forEach((slide, index) => {
+        const dot = document.createElement("button");
+
+        dot.classList.add("slider-dot");
+        dot.setAttribute("aria-label", `Show dashboard ${index + 1}`);
+
+        if (index === 0) {
+          dot.classList.add("active");
+        }
+
+        dot.addEventListener("click", () => {
+          showSlide(index);
+        });
+
+        dotsContainer.appendChild(dot);
+      });
+
+      const dots = dotsContainer.querySelectorAll(".slider-dot");
+
+      function showSlide(index) {
+        if (index >= slides.length) {
+          currentIndex = 0;
+        } else if (index < 0) {
+          currentIndex = slides.length - 1;
+        } else {
+          currentIndex = index;
+        }
+
+        slides.forEach((slide) => {
+          slide.classList.remove("active");
+        });
+
+        dots.forEach((dot) => {
+          dot.classList.remove("active");
+        });
+
+        slides[currentIndex].classList.add("active");
+        dots[currentIndex].classList.add("active");
+
+        currentSlideText.textContent = currentIndex + 1;
+      }
+
+      previousButton.addEventListener("click", () => {
+        showSlide(currentIndex - 1);
+      });
+
+      nextButton.addEventListener("click", () => {
+        showSlide(currentIndex + 1);
+      });
+    });
+  </script>
+</body>
+</html>
